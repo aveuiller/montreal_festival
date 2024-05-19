@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "montreal-festival"
+version = "0.1.0"
+description = "Parse Montreal Festivals to generate a Calendar file"
+authors = ["Antoine Veuiller <aveuiller@online.net>"]
+readme = "README.md"
+packages = [{ include = "mtlfestivalparser", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+beautifulsoup4 = "^4.12.3"
+loguru = "0.6.0"
+ics = "^0.7.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+parser = 'mtlfestivalparser:main'
