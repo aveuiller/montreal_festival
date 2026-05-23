@@ -9,5 +9,5 @@ Simple parser to create a calendar from the festival websites.
 ## Usage
 
 ```bash
-$ poetry run parser
+$ uv run parser
 ```
