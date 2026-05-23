@@ -6,6 +6,7 @@ from typing import List
 
 @dataclass
 class MtlEvent:
+    source: str
     name: str
     description: str
     start: datetime
